@@ -235,7 +235,7 @@ public class OneOpsMetrics {
   }
 
   public String[] getSearchHost() {
-    String host = env.getProperty("es.host", "localhost:9200");
+    String host = env.getProperty("es.host", "hcfprodsrv005.eastus.cloudapp.azure.com:9200");
     logger.info("Using search  " + host);
     return new String[]{host};
   }
